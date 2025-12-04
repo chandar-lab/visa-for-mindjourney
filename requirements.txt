@@ -1,0 +1,42 @@
+openai==1.55.2
+transformers==4.46.3
+numpy-quaternion==2023.0.4
+numpy==1.24.4
+decord==0.6.0
+pylatexenc==2.10
+datasets==3.1.0
+httpx==0.27.2
+torch>=2.0.0
+torchvision>=0.15.0
+transformers==4.46.3
+diffusers>=0.21.0
+safetensors>=0.3.0
+opencv-python>=4.8.0
+Pillow>=9.0.0
+kornia>=0.7.0
+imageio[ffmpeg]>=2.31.0
+tqdm>=4.65.0
+decord==0.6.0
+accelerate>=0.26.0
+
+# Text Processing
+sentence-transformers>=2.2.0
+
+# Stable Virtual Camera Dependencies
+roma>=0.2.0
+viser>=0.1.0
+tyro>=0.5.0
+fire>=0.5.0
+ninja>=1.11.0
+gradio==4.44.1
+einops>=0.7.0
+colorama>=0.4.6
+splines>=0.3.0
+open-clip-torch>=2.20.0
+huggingface-hub>=0.19.0
+matplotlib>=3.7.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Qwen3-VL Dependencies
+qwen-vl-utils>=0.0.14

@@ -1,0 +1,46 @@
+{
+  "MindJourney": {
+    "top_1": {
+      "move forward": 29,
+      "turn left": 79,
+      "turn right": 42
+    },
+    "top_2": {
+      "move forward": 54,
+      "turn left": 145,
+      "turn right": 101
+    },
+    "top_3": {
+      "move forward": 76,
+      "turn left": 224,
+      "turn right": 150
+    },
+    "top_4": {
+      "move forward": 121,
+      "turn left": 276,
+      "turn right": 203
+    }
+  },
+  "Ours": {
+    "top_1": {
+      "move forward": 99,
+      "turn right": 15,
+      "turn left": 36
+    },
+    "top_2": {
+      "move forward": 161,
+      "turn left": 90,
+      "turn right": 49
+    },
+    "top_3": {
+      "move forward": 194,
+      "turn left": 162,
+      "turn right": 94
+    },
+    "top_4": {
+      "move forward": 205,
+      "turn left": 238,
+      "turn right": 157
+    }
+  }
+}

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: seva
+Version: 0.0.0
+Requires-Python: >=3.10
+Requires-Dist: torch
+Requires-Dist: roma
+Requires-Dist: viser
+Requires-Dist: tyro
+Requires-Dist: fire
+Requires-Dist: ninja
+Requires-Dist: gradio==5.17.0
+Requires-Dist: einops
+Requires-Dist: colorama
+Requires-Dist: splines
+Requires-Dist: kornia
+Requires-Dist: open-clip-torch
+Requires-Dist: diffusers
+Requires-Dist: numpy==1.24.4
+Requires-Dist: imageio[ffmpeg]
+Requires-Dist: huggingface-hub
+Requires-Dist: opencv-python
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: ipdb; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: line_profiler; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"

@@ -1,0 +1,197 @@
+{
+  "image_selection_patterns": {
+    "baseline_selection_analysis": {
+      "total_selections": 221,
+      "action_type_distribution": {
+        "move forward": 124,
+        "turn left": 63,
+        "turn right": 34
+      },
+      "magnitude_statistics": {
+        "mean": 8.135746606334841,
+        "std": 9.963292946763708,
+        "median": 0.75,
+        "count": 221
+      },
+      "scoring_analysis": {
+        "mean_score": 1.493212669683258,
+        "std_score": 2.3040784408433095,
+        "median_score": 0.0,
+        "min_score": "0",
+        "max_score": "9",
+        "count": 221
+      },
+      "score_distribution": {
+        "score_frequencies": {
+          "1": 42,
+          "3": 19,
+          "2": 14,
+          "0": 114,
+          "8": 5,
+          "7": 4,
+          "5": 7,
+          "4": 7,
+          "9": 6,
+          "6": 3
+        },
+        "score_percentages": {
+          "1": 0.19004524886877827,
+          "3": 0.08597285067873303,
+          "2": 0.06334841628959276,
+          "0": 0.5158371040723982,
+          "8": 0.02262443438914027,
+          "7": 0.01809954751131222,
+          "5": 0.03167420814479638,
+          "4": 0.03167420814479638,
+          "9": 0.027149321266968326,
+          "6": 0.013574660633484163
+        },
+        "high_score_selections": 15,
+        "low_score_selections": 189,
+        "medium_score_selections": 17
+      },
+      "selection_efficiency": {
+        "avg_images_per_question": 4.804347826086956,
+        "std_images_per_question": 1.5268547554480763,
+        "max_images_per_question": "6",
+        "min_images_per_question": "1",
+        "questions_with_selections": 46,
+        "correct_questions": 37,
+        "selection_success_rate": 0.8043478260869565
+      }
+    },
+    "verifier_selection_analysis": {
+      "total_selections": 102,
+      "action_type_distribution": {
+        "turn left": 33,
+        "turn right": 42,
+        "move forward": 27
+      },
+      "magnitude_statistics": {
+        "mean": 13.897058823529411,
+        "std": 10.11740837041753,
+        "median": 18.0,
+        "count": 102
+      },
+      "quality_metrics_analysis": {},
+      "selection_efficiency": {
+        "avg_images_per_question": 2.04,
+        "std_images_per_question": 0.27999999999999997,
+        "max_images_per_question": "4",
+        "min_images_per_question": "2",
+        "questions_with_selections": 50,
+        "correct_questions": 36,
+        "selection_success_rate": 0.72
+      }
+    },
+    "selection_comparison": {
+      "selection_count_comparison": {
+        "baseline_total": 221,
+        "verifier_total": 102,
+        "difference": -119,
+        "ratio": 0.46153846153846156
+      },
+      "action_type_comparison": {
+        "turn left": {
+          "baseline_count": 63,
+          "verifier_count": 33,
+          "difference": -30,
+          "relative_change": -0.47619047619047616
+        },
+        "turn right": {
+          "baseline_count": 34,
+          "verifier_count": 42,
+          "difference": 8,
+          "relative_change": 0.23529411764705882
+        },
+        "move forward": {
+          "baseline_count": 124,
+          "verifier_count": 27,
+          "difference": -97,
+          "relative_change": -0.782258064516129
+        }
+      },
+      "magnitude_comparison": {
+        "baseline_stats": {
+          "mean": 8.135746606334841,
+          "std": 9.963292946763708,
+          "median": 0.75,
+          "count": 221
+        },
+        "verifier_stats": {
+          "mean": 13.897058823529411,
+          "std": 10.11740837041753,
+          "median": 18.0,
+          "count": 102
+        },
+        "statistical_significance": {
+          "error": "Statistical test failed: name 'baseline_magnitudes' is not defined"
+        }
+      },
+      "selection_diversity": {
+        "baseline_diversity": {
+          "action_type_entropy": 1.39938349029198,
+          "magnitude_variance": 99.26720634303148,
+          "unique_combinations": 9,
+          "total_selections": 221
+        },
+        "verifier_diversity": {
+          "action_type_entropy": 1.5614027904621766,
+          "magnitude_variance": 102.36195213379472,
+          "unique_combinations": 9,
+          "total_selections": 102
+        },
+        "diversity_comparison": {
+          "action_type_entropy_diff": 0.1620193001701966,
+          "magnitude_variance_diff": 3.094745790763241,
+          "unique_combinations_diff": 0
+        }
+      }
+    },
+    "selection_effectiveness": {
+      "baseline_effectiveness": {
+        "overall_success_rate": 0.8043478260869565,
+        "total_questions": 46,
+        "correct_questions": 37,
+        "action_type_effectiveness": {
+          "move forward": 0.7983870967741935,
+          "turn left": 0.7936507936507936,
+          "turn right": 0.9411764705882353
+        },
+        "avg_selections_per_question": 4.804347826086956
+      },
+      "verifier_effectiveness": {
+        "overall_success_rate": 0.72,
+        "total_questions": 50,
+        "correct_questions": 36,
+        "action_type_effectiveness": {
+          "turn left": 0.7272727272727273,
+          "turn right": 0.7380952380952381,
+          "move forward": 0.7037037037037037
+        },
+        "avg_selections_per_question": 2.04
+      },
+      "effectiveness_comparison": {
+        "success_rate_improvement": -0.08434782608695657,
+        "relative_improvement": -0.10486486486486492,
+        "efficiency_comparison": {
+          "baseline_avg_selections": 4.804347826086956,
+          "verifier_avg_selections": 2.04,
+          "efficiency_ratio": 0.4246153846153847
+        }
+      },
+      "quality_correlation_analysis": {}
+    }
+  },
+  "summary_statistics": {
+    "baseline_accuracy": 0.82,
+    "verifier_accuracy": 0.72,
+    "accuracy_improvement": -0.09999999999999998,
+    "relative_improvement": -0.1219512195121951,
+    "baseline_questions_loaded": 50,
+    "verifier_questions_loaded": 50,
+    "baseline_questions_with_data": 50,
+    "verifier_questions_with_data": 50,
+    "analysis_timestamp": "2025-10-02T08:56:00.347735"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "image_selection_patterns": {
+    "baseline_selection_analysis": {
+      "total_selections": 52,
+      "action_type_distribution": {
+        "turn right": 32,
+        "turn left": 14,
+        "move forward": 6
+      },
+      "magnitude_statistics": {
+        "mean": 17.884615384615383,
+        "std": 9.312995151841582,
+        "median": 18.0,
+        "count": 52
+      },
+      "scoring_analysis": {
+        "mean_score": 2.0384615384615383,
+        "std_score": 3.0631905090402975,
+        "median_score": 1.0,
+        "min_score": "0",
+        "max_score": "9",
+        "count": 52
+      },
+      "score_distribution": {
+        "score_frequencies": {
+          "2": 4,
+          "0": 25,
+          "8": 2,
+          "1": 11,
+          "5": 2,
+          "6": 1,
+          "9": 5,
+          "7": 1,
+          "3": 1
+        },
+        "score_percentages": {
+          "2": 0.07692307692307693,
+          "0": 0.4807692307692308,
+          "8": 0.038461538461538464,
+          "1": 0.21153846153846154,
+          "5": 0.038461538461538464,
+          "6": 0.019230769230769232,
+          "9": 0.09615384615384616,
+          "7": 0.019230769230769232,
+          "3": 0.019230769230769232
+        },
+        "high_score_selections": 8,
+        "low_score_selections": 41,
+        "medium_score_selections": 3
+      },
+      "selection_efficiency": {
+        "avg_images_per_question": 1.6774193548387097,
+        "std_images_per_question": 0.8939617071323237,
+        "max_images_per_question": "5",
+        "min_images_per_question": "1",
+        "questions_with_selections": 31,
+        "correct_questions": 23,
+        "selection_success_rate": 0.7419354838709677
+      }
+    },
+    "verifier_selection_analysis": {
+      "total_selections": 101,
+      "action_type_distribution": {
+        "turn left": 30,
+        "move forward": 48,
+        "turn right": 23
+      },
+      "magnitude_statistics": {
+        "mean": 8.51980198019802,
+        "std": 9.248741094980241,
+        "median": 9.0,
+        "count": 101
+      },
+      "quality_metrics_analysis": {},
+      "selection_efficiency": {
+        "avg_images_per_question": 2.02,
+        "std_images_per_question": 0.13999999999999999,
+        "max_images_per_question": "3",
+        "min_images_per_question": "2",
+        "questions_with_selections": 50,
+        "correct_questions": 43,
+        "selection_success_rate": 0.86
+      }
+    },
+    "selection_comparison": {
+      "selection_count_comparison": {
+        "baseline_total": 52,
+        "verifier_total": 101,
+        "difference": 49,
+        "ratio": 1.9423076923076923
+      },
+      "action_type_comparison": {
+        "turn left": {
+          "baseline_count": 14,
+          "verifier_count": 30,
+          "difference": 16,
+          "relative_change": 1.1428571428571428
+        },
+        "turn right": {
+          "baseline_count": 32,
+          "verifier_count": 23,
+          "difference": -9,
+          "relative_change": -0.28125
+        },
+        "move forward": {
+          "baseline_count": 6,
+          "verifier_count": 48,
+          "difference": 42,
+          "relative_change": 7.0
+        }
+      },
+      "magnitude_comparison": {
+        "baseline_stats": {
+          "mean": 17.884615384615383,
+          "std": 9.312995151841582,
+          "median": 18.0,
+          "count": 52
+        },
+        "verifier_stats": {
+          "mean": 8.51980198019802,
+          "std": 9.248741094980241,
+          "median": 9.0,
+          "count": 101
+        },
+        "statistical_significance": {
+          "error": "Statistical test failed: name 'baseline_magnitudes' is not defined"
+        }
+      },
+      "selection_diversity": {
+        "baseline_diversity": {
+          "action_type_entropy": 1.300194642888527,
+          "magnitude_variance": 86.73187869822482,
+          "unique_combinations": 9,
+          "total_selections": 52
+        },
+        "verifier_diversity": {
+          "action_type_entropy": 1.516361553126227,
+          "magnitude_variance": 85.53921184197631,
+          "unique_combinations": 9,
+          "total_selections": 101
+        },
+        "diversity_comparison": {
+          "action_type_entropy_diff": 0.21616691023769996,
+          "magnitude_variance_diff": -1.1926668562485077,
+          "unique_combinations_diff": 0
+        }
+      }
+    },
+    "selection_effectiveness": {
+      "baseline_effectiveness": {
+        "overall_success_rate": 0.7419354838709677,
+        "total_questions": 31,
+        "correct_questions": 23,
+        "action_type_effectiveness": {
+          "turn right": 0.625,
+          "turn left": 0.9285714285714286,
+          "move forward": 1.0
+        },
+        "avg_selections_per_question": 1.6774193548387097
+      },
+      "verifier_effectiveness": {
+        "overall_success_rate": 0.86,
+        "total_questions": 50,
+        "correct_questions": 43,
+        "action_type_effectiveness": {
+          "turn left": 0.9333333333333333,
+          "move forward": 0.8333333333333334,
+          "turn right": 0.8260869565217391
+        },
+        "avg_selections_per_question": 2.02
+      },
+      "effectiveness_comparison": {
+        "success_rate_improvement": 0.11806451612903224,
+        "relative_improvement": 0.15913043478260866,
+        "efficiency_comparison": {
+          "baseline_avg_selections": 1.6774193548387097,
+          "verifier_avg_selections": 2.02,
+          "efficiency_ratio": 1.2042307692307692
+        }
+      },
+      "quality_correlation_analysis": {}
+    }
+  },
+  "summary_statistics": {
+    "baseline_accuracy": 0.76,
+    "verifier_accuracy": 0.86,
+    "accuracy_improvement": 0.09999999999999998,
+    "relative_improvement": 0.13157894736842102,
+    "baseline_questions_loaded": 50,
+    "verifier_questions_loaded": 50,
+    "baseline_questions_with_data": 50,
+    "verifier_questions_with_data": 50,
+    "analysis_timestamp": "2025-10-01T16:24:34.844255"
+  }
+}
